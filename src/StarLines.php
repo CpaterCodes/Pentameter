@@ -1,5 +1,5 @@
 <?php
-require 'StarCalculator.php';
+require_once 'StarCalculator.php';
 
 class StarLines implements StarCalculator {
   static function calculate($sides){
