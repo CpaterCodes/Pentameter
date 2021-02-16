@@ -1,10 +1,10 @@
 <?php
-require_once 'StarCalculator.php';
 
-class StarAngles implements StarCalculator {
+class StarAngles {
   static function calculate($sides){
     $ans = 180.0 - (720.0 / $sides);
-    return round($ans, 3);
+    $ans_to_3_decimals = round($ans, 3);
+    return $ans_to_3_decimals;
   }
 }
 ?>

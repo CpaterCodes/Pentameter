@@ -1,7 +1,6 @@
 <?php
-require_once 'StarCalculator.php';
 
-class StarLines implements StarCalculator {
+class StarLines {
   static function calculate($sides){
     return "pending";
   }
