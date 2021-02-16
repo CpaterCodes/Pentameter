@@ -36,4 +36,19 @@ class FeatureContext implements Context
         throw new Exception('Angle has not been properly calculated');
       }
     }
+
+    /**
+    *@When I request the length for :sides sides and a circumference of :circ cm
+    */
+    public function askLine($sides, $circ){
+      $this->length = StarLines::calculate($sides, $circ);
+    }
+    /**
+    *@Then I should get a length of :length cm
+    */
+    public function checkline($length){
+      if($this->length != $length){
+        throw new Exception('Length has not been properly calculated');
+      }
+    }
 }

@@ -17,7 +17,7 @@ performing complex operations in PHP.
 As a User
 So that I can draw an even star
 I would like to know the angle of a single vertex based on the number of vertices.
-[progress: pending]
+[progress: completed, pending integration]
 ```
 
 ```
