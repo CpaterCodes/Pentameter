@@ -3,6 +3,6 @@
     "behat/behat": "3.8.*"
   },
   "config": {
-    "bin-dir": "bin/"
+    "bin-dir": "behat-bin/"
   }
 }
