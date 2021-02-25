@@ -5,10 +5,11 @@ require 'src/StarLines.php';
 use Behat\Behat\Context\Context;
 use Behat\Gherkin\Node\PyStringNode;
 use Behat\Gherkin\Node\TableNode;
+use Behat\MinkExtension\Context\MinkContext;
 /**
  * Defines application features from the specific context.
  */
-class FeatureContext implements Context
+class FeatureContext extends MinkContext
 {
     /**
      * Initializes context.
@@ -19,6 +20,16 @@ class FeatureContext implements Context
      */
     public function __construct()
     {
+    }
+
+    /**
+    *@Given I am using the site
+    */
+    public function session_init(){
+      $driver = new \Behat\Mink\Driver\GoutteDriver();
+      $session = new \Behat\Mink\Session($driver);
+      $session->start();
+      $session->visit('http://localhost:8000/');
     }
 
     /**
@@ -50,5 +61,5 @@ class FeatureContext implements Context
       if($this->length != $length){
         throw new Exception('Length has not been properly calculated');
       }
-    }
+    }  
 }

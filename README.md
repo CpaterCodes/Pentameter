@@ -24,7 +24,7 @@ I would like to know the angle of a single vertex based on the number of vertice
 As a User
 So that I can also corroborate angle metrics and can work with a compass
 I would like to also know the length of the lines between vertices.
-[progress: pending]
+[progress: completed, pending integration]
 ```
 
 ```
