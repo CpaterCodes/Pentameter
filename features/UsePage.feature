@@ -9,8 +9,9 @@ Feature: Pentameter
     Given I am on "http://localhost:8000/"
     And I fill in "vertex-count" with "5"
     And I fill in "circumference" with "10"
-    And I press "submit"
+    And I press "Calculate"
     Then I should see "9.511"
+    And I should see "36"
   Scenario: Enter a number of vertices only
 
   Scenario: Enter a circumference only
