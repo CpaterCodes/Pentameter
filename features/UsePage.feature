@@ -6,8 +6,8 @@ Feature: Pentameter
   compass, I would like to also know the length of the lines between vertices.
 
   Scenario: Enter a number of vertices and a circumference
-    Given I am using the site
-    When I fill in "vertex-count" with "5"
+    Given I am on "http://localhost:8000/"
+    And I fill in "vertex-count" with "5"
     And I fill in "circumference" with "10"
     And I press "submit"
     Then I should see "9.511"

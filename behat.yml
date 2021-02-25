@@ -1,6 +1,4 @@
 default:
   extensions:
     Behat\MinkExtension:
-      sessions:
-        default:
-          goutte: ~
+      goutte: ~

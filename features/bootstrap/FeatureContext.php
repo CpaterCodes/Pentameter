@@ -21,17 +21,7 @@ class FeatureContext extends MinkContext
     public function __construct()
     {
     }
-
-    /**
-    *@Given I am using the site
-    */
-    public function session_init(){
-      $driver = new \Behat\Mink\Driver\GoutteDriver();
-      $session = new \Behat\Mink\Session($driver);
-      $session->start();
-      $session->visit('http://localhost:8000/');
-    }
-
+    
     /**
     *@When I request the angle measurement for a star with :sides sides
     */
@@ -61,5 +51,5 @@ class FeatureContext extends MinkContext
       if($this->length != $length){
         throw new Exception('Length has not been properly calculated');
       }
-    }  
+    }
 }
