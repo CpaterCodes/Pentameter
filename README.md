@@ -33,6 +33,13 @@ So that I can rule out obviously absurd results,
 I would like to be informed of an error if the angle equals or falls below 0.
 [progress: pending]
 ```
+
+```
+As a User
+So that the page remains calm and collected amidst shenanigans
+I would like non-integer inputs to be handled with a dedicated error message
+[progress: pending]
+```
 ## Installation
 
 1. Fork and clone this repo
@@ -46,9 +53,3 @@ I would like to be informed of an error if the angle equals or falls below 0.
 2. Run "behat-bin/behat" to ensure that all tests are passing
 
 3. Feel free to play with the tool yourself!
-
-## Bugs of note
-
-- On first startup, page will throw errors as relevant $_POST array keys are
-undefined. The page otherwise functions once a 'submit' action is performed.
-Currently awaiting a fix.

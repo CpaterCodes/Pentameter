@@ -1,6 +1,10 @@
 <head>
   <?php
     require 'src/PageHelpers.php';
+    if(!isset($_POST['vertex-count']) && !isset($_POST['circumference'])){
+      $_POST['vertex-count'] = false;
+      $_POST['circumference'] = false;
+    }
   ?>
   <title>Pentameter: A Pentacle helper!</title>
   <link rel="stylesheet" href="assets/style.css">
