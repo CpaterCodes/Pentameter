@@ -1,7 +1,6 @@
 <head>
   <?php
-    require 'src/StarAngles.php';
-    require 'src/StarLines.php';
+    require 'src/PageHelpers.php';
   ?>
   <title>Pentameter: A Pentacle helper!</title>
   <meta charset="utf-8">
@@ -18,9 +17,9 @@
 
  <div id='output-values'>
    Vertex Angle:
-   <?php echo StarAngles::calculate($_POST['vertex-count']); ?><br>
+   <?php echo handleAngleInput(); ?><br>
    Line Length:
-   <?php echo StarLines::calculate($_POST['vertex-count'],$_POST['circumference']); ?>
+   <?php echo handleLineInput(); ?>
  </div>
 
 </body>
