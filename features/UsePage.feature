@@ -12,6 +12,16 @@ Feature: Pentameter
     And I press "Calculate"
     Then I should see "9.511"
     And I should see "36"
+
   Scenario: Enter a number of vertices only
+    Given I am on "http://localhost:8000/"
+    And I fill in "vertex-count" with "9"
+    And I press "Calculate"
+    Then I should see "100"
+    And I should not see "Fatal error: Uncaught TypeError"
 
   Scenario: Enter a circumference only
+    Given I am on "http://localhost:8000/"
+    And I fill in "circumference" with "7"
+    And I press "Calculate"
+    Then I should see "Please provide a number of vertices"
