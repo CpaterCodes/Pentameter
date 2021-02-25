@@ -17,14 +17,14 @@ performing complex operations in PHP.
 As a User
 So that I can draw an even star
 I would like to know the angle of a single vertex based on the number of vertices.
-[progress: completed, pending integration]
+[progress: completed]
 ```
 
 ```
 As a User
 So that I can also corroborate angle metrics and can work with a compass
 I would like to also know the length of the lines between vertices.
-[progress: completed, pending integration]
+[progress: completed]
 ```
 
 ```
@@ -33,3 +33,22 @@ So that I can rule out obviously absurd results,
 I would like to be informed of an error if the angle equals or falls below 0.
 [progress: pending]
 ```
+## Installation
+
+1. Fork and clone this repo
+
+2. Run 'composer install'
+
+## Testing
+
+1. Run "php -S localhost:8000" in the project root to start a server instance
+
+2. Run "behat-bin/behat" to ensure that all tests are passing
+
+3. Feel free to play with the tool yourself!
+
+## Bugs of note
+
+- On first startup, page will throw errors as relevant $_POST array keys are
+undefined. The page otherwise functions once a 'submit' action is performed.
+Currently awaiting a fix.
