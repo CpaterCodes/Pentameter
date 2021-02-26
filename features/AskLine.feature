@@ -20,3 +20,11 @@ Feature: Lines
 
     When I request the length for 7 sides and a circumference of "potato"
     Then I should get a length of "Invalid circumference"
+
+  Scenario: Enter a valid circumference but an invalid vertex count
+
+    When I request the length for "foo" sides and a circumference of 3
+    Then I should get a length of "See above"
+
+    When I request the length for 4.7 sides and a circumference of 3
+    Then I should get a length of "See above"
