@@ -29,7 +29,7 @@ I would like to also know the length of the lines between vertices.
 
 ```
 As a User
-So that I can rule out obviously absurd results,
+So that I can rule out obviously absurd results
 I would like to be informed of an error if the angle equals or falls below 0.
 [progress: pending]
 ```
@@ -37,7 +37,7 @@ I would like to be informed of an error if the angle equals or falls below 0.
 ```
 As a User
 So that the page remains calm and collected amidst shenanigans
-I would like non-integer inputs to be handled with a dedicated error message
+I would like inapplicable inputs to be handled with a dedicated error message.
 [progress: pending]
 ```
 ## Installation

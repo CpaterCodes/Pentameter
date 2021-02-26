@@ -21,7 +21,7 @@ class FeatureContext extends MinkContext
     public function __construct()
     {
     }
-    
+
     /**
     *@When I request the angle measurement for a star with :sides sides
     */
@@ -30,7 +30,7 @@ class FeatureContext extends MinkContext
     }
 
     /**
-    *@Then I should get an angle of :angle degrees
+    *@Then I should get an angle of :angle
     */
     public function checkAngle($angle){
       if($this->angle != $angle){
@@ -39,13 +39,13 @@ class FeatureContext extends MinkContext
     }
 
     /**
-    *@When I request the length for :sides sides and a circumference of :circ cm
+    *@When I request the length for :sides sides and a circumference of :circ
     */
     public function askLine($sides, $circ){
       $this->length = StarLines::calculate($sides, $circ);
     }
     /**
-    *@Then I should get a length of :length cm
+    *@Then I should get a length of :length
     */
     public function checkline($length){
       if($this->length != $length){
