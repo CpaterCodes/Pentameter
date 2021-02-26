@@ -27,7 +27,7 @@
    Vertex Angle:
    <?php echo handleAngleInput(); ?><br><br>
    Line Length:
-   <?php echo handleLineInput(); ?>
+   <?php echo handleLineInput(); ?><br><br>
  </div>
 
 </body>

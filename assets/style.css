@@ -5,15 +5,24 @@
 
 h1, h3 {
   margin: 0px;
-  height:30px;
   background-color: yellow;
   display: flex;
   justify-content: center;
 }
+
+h1 {
+  height: 10%;
+  border-radius: 20px 20px 0px 0px;
+}
+h3 {
+  height: 5%;
+}
+
 body {
   font-family: monospace;
-  background-color: #2a4200;
+  background-color: #7aab00;
 }
+
 div {
   background-color: grey;
   font-size: 18px;
@@ -24,7 +33,7 @@ div {
 
 form {
   text-align: center;
-  width:50%;
+  width:70%;
 }
 
 input {
@@ -40,4 +49,8 @@ input {
 input:hover {
   background-color: yellow;
   color: black;
+}
+
+#output-values {
+  border-radius: 0px 0px 20px 20px;
 }
