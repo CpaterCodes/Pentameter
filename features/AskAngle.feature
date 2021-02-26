@@ -7,7 +7,7 @@ Feature: Angles
 
   As a User, so that I can rule out obviously absurd results, I would like to be
   informed of an error if the angle equals or falls below 0.
-  
+
   Scenario: Enter a number of vertices
 
     When I request the angle measurement for a star with 5 sides
@@ -30,7 +30,7 @@ Feature: Angles
   Scenario: Enter a vertex number that doesn't make for a valid star
 
     When I request the angle measurement for a star with 4 sides
-    Then I should get an angle of "Request doesn't create a valid star"
+    Then I should get an angle of "Please use a valid integer"
 
     When I request the angle measurement for a star with 3 sides
-    Then I should get an angle of "Request doesn't create a valid star"
+    Then I should get an angle of "Please use a valid integer"
