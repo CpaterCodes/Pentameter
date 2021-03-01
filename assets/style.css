@@ -20,7 +20,7 @@ h3 {
 
 body {
   font-family: monospace;
-  background-color: #7aab00;
+  background-color: #007539;
 }
 
 div {
@@ -37,6 +37,7 @@ form {
 }
 
 input {
+  border-radius: 6px;
   border-width: 0px;
   background-color: black;
   color: yellow;
