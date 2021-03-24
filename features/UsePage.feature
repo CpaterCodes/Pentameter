@@ -11,10 +11,10 @@ Feature: Pentameter
   As a User, so that I can rule out obviously absurd results, I would like to be
   informed of an error if the angle equals or falls below 0.
 
-  Scenario: Enter a number of vertices and a circumference
+  Scenario: Enter a number of vertices and a diameter
     Given I am on "http://localhost:8000/"
     And I fill in "vertex-count" with "5"
-    And I fill in "circumference" with "10"
+    And I fill in "diameter" with "10"
     And I press "Calculate"
     Then I should see "9.511"
     And I should see "36"
@@ -26,8 +26,8 @@ Feature: Pentameter
     Then I should see "100"
     And I should not see "Fatal error: Uncaught TypeError"
 
-  Scenario: Enter a circumference only
+  Scenario: Enter a diameter only
     Given I am on "http://localhost:8000/"
-    And I fill in "circumference" with "7"
+    And I fill in "diameter" with "7"
     And I press "Calculate"
     Then I should see "Please provide a number of vertices"

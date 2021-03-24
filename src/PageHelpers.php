@@ -10,10 +10,10 @@ function handleAngleInput(){
 }
 
 function handleLineInput(){
-  if($_POST['circumference'] && $_POST['vertex-count']){
-    return StarLines::calculate($_POST['vertex-count'], $_POST['circumference']);
+  if($_POST['diameter'] && $_POST['vertex-count']){
+    return StarLines::calculate($_POST['vertex-count'], $_POST['diameter']);
   }
-  return 'Circumference Pending';
+  return 'Diameter Pending';
 }
 
 ?>

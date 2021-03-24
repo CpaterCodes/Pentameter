@@ -1,9 +1,9 @@
 <head>
   <?php
     require 'src/PageHelpers.php';
-    if(!isset($_POST['vertex-count']) && !isset($_POST['circumference'])){
+    if(!isset($_POST['vertex-count']) && !isset($_POST['diameter'])){
       $_POST['vertex-count'] = false;
-      $_POST['circumference'] = false;
+      $_POST['diameter'] = false;
     }
   ?>
   <title>Pentameter: A Pentacle helper!</title>
@@ -18,7 +18,7 @@
   <div id='input-values'>
    <form action="submit" method="post">
      <input name="vertex-count" placeholder="Enter Vertices count here" type="text"><br>
-     <input name="circumference" placeholder="Optionally, enter circumference here" type="text"><br>
+     <input name="diameter" placeholder="Optionally, enter diameter here" type="text"><br>
      <input type="submit" value="Calculate">
    </form>
  </div>

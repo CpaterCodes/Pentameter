@@ -39,10 +39,10 @@ class FeatureContext extends MinkContext
     }
 
     /**
-    *@When I request the length for :sides sides and a circumference of :circ
+    *@When I request the length for :sides sides and a diameter of :diameter
     */
-    public function askLine($sides, $circ){
-      $this->length = StarLines::calculate($sides, $circ);
+    public function askLine($sides, $diameter){
+      $this->length = StarLines::calculate($sides, $diameter);
     }
     /**
     *@Then I should get a length of :length

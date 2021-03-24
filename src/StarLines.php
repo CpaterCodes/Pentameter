@@ -3,10 +3,10 @@
 class StarLines {
   private const Two_PI =  2 * M_PI;
 
-  static function calculate($sides, $circ){
-    if(!StarLines::validCirc($circ)){ return "Invalid circumference";}
+  static function calculate($sides, $diameter){
+    if(!StarLines::validDiameter($diameter)){ return "Invalid diameter";}
     if(!StarLines::ValidSides($sides)){ return "See above";}
-    $ans = sin((StarLines::Two_PI / $sides)) * $circ;
+    $ans = sin((StarLines::Two_PI / $sides)) * $diameter;
     return StarLines::to_3_decs($ans);
   }
 
@@ -14,8 +14,8 @@ class StarLines {
     return round($ans, 3);
   }
 
-  private static function ValidCirc($circ){
-    return ($circ > 0) && is_numeric($circ);
+  private static function ValidDiameter($diameter){
+    return ($diameter > 0) && is_numeric($diameter);
   }
 
   private static function ValidSides($sides){
